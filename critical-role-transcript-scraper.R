@@ -72,6 +72,8 @@ for (num in 1:nrow(season_df)) {
   episode_number <- as.character(num)
   episode_title <- as.character(season_df[num,]$title)
   
+  message("Scraping: ", episode_number, ".) ", episode_title)
+  
   # Make a new list to store the text data.
   text_list = list()
   
